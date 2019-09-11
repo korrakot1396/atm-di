@@ -1,4 +1,4 @@
-package configannotation;
+package annotation;
 
 /**
  * A bank customer with a checking and a savings account.

@@ -1,4 +1,4 @@
-package configannotation;
+package annotation;
 
 /**
  * A bank account has a balance that can be changed by

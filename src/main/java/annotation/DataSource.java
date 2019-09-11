@@ -1,6 +1,6 @@
-package configannotation;
+package annotation;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.FileReader;
@@ -15,11 +15,10 @@ public class DataSource {
     private String filename;
 
     /**
-     //* @param filename the name of the customer file
+     * @param filename the name of the customer file
      */
-    @Autowired
-    public DataSource() {
-        this.filename = "customers.txt";
+    public DataSource(@Value("customers.txt") String filename) {
+        this.filename = filename;
     }
 
     /**
