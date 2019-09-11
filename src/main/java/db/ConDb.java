@@ -17,7 +17,7 @@ public class ConDb {
                 System.out.println("Driver name: " + dm.getDriverName());
                 System.out.println("Product name: " + dm.getDatabaseProductName());
 // execute SQL statements
-                System.out.println("----- Data in Book table -----");
+                System.out.println("------ table in db -----");
                 String query = "Select * from account";
                 Statement statement = conn.createStatement();
                 ResultSet resultSet = statement.executeQuery(query);
