@@ -1,8 +1,5 @@
 package javaconfig;
 
-import atm.Customer;
-import atm.DataSource;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -20,11 +17,7 @@ public class Bank {
     */
    public Bank(DataSource dataSource) {
       this.dataSource = dataSource;
-      customers = new HashMap<Integer,Customer>();
-   }
-
-   public Bank(javaconfig.DataSource dataSource) {
-
+      customers = new HashMap<Integer, Customer>();
    }
 
    public void initializeCustomers() throws IOException {
@@ -37,14 +30,14 @@ public class Bank {
    public void addCustomer(Customer c) {
       customers.put(c.getCustomerNumber(), c);
    }
-   
-   /** 
+
+   /**
     * Finds a customer in the bank.
     * @param number a customer number
     * @return the matching customer, or null if no customer
     * matches
     */
    public Customer findCustomer(int number) {
-	  return customers.get(number);
+      return customers.get(number);
    }
 }

@@ -1,7 +1,5 @@
 package javaconfig;
 
-import atm.Customer;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
@@ -17,10 +15,6 @@ public class DataSource {
      */
     public DataSource(String filename) {
         this.filename = filename;
-    }
-
-    public DataSource() {
-
     }
 
     /**
