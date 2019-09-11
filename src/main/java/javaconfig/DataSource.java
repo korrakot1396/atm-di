@@ -19,6 +19,10 @@ public class DataSource {
         this.filename = filename;
     }
 
+    public DataSource() {
+
+    }
+
     /**
      * Reads the customer numbers and pins
      * and initializes the bank accounts.

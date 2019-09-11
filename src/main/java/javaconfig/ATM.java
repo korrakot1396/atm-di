@@ -3,6 +3,7 @@ package javaconfig;
 import atm.Account;
 import atm.Customer;
 
+
 import java.io.IOException;
 
 /**
@@ -15,7 +16,7 @@ public class ATM {
 	private int state;
 	private int customerNumber;
 	private Customer currentCustomer;
-	private Account currentAccount;
+	private atm.Account currentAccount;
 	private Bank bank;
 
 	/**

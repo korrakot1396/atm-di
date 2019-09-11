@@ -1,4 +1,4 @@
-package atm;
+package javaconfig;
 
 import java.io.IOException;
 import java.util.Scanner;

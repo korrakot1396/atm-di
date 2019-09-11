@@ -20,12 +20,12 @@ public class Customer {
       this.pin = pin;
       this.account = new Account(initialBalance);
    }
-   
+
    public int getCustomerNumber() {
-	   return customerNumber;
+      return customerNumber;
    }
-   
-   /** 
+
+   /**
     * Tests if this customer matches a customer number
     * and PIN.
     * @param inputPin a personal identification number
@@ -34,8 +34,8 @@ public class Customer {
    public boolean match(int inputPin) {
       return pin == inputPin;
    }
-      
-   /** 
+
+   /**
     * Gets the account of this customer.
     * @return the account
     */

@@ -23,6 +23,10 @@ public class Bank {
       customers = new HashMap<Integer,Customer>();
    }
 
+   public Bank(javaconfig.DataSource dataSource) {
+
+   }
+
    public void initializeCustomers() throws IOException {
       customers = dataSource.readCustomers();
    }
